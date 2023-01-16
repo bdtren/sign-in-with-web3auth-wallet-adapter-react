@@ -23,7 +23,7 @@ export class Web3AuthWalletAdapter extends BaseMessageSignerWalletAdapter {
         typeof window === 'undefined' || typeof document === 'undefined'
             ? WalletReadyState.Unsupported
             : WalletReadyState.Loadable;
-    //
+
     private _web3auth: Web3Auth | null;
     private _provider: SafeEventEmitterProvider | null;
 
